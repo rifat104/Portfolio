@@ -213,18 +213,28 @@
                     <p><i class="uil uil-phone"></i> Tel: +8801993006838</p>
                 </div>
              </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
+            <div class="col">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        
+        <input type="hidden" name="access_key" value="e87c0bef-3de7-4d9d-a2c2-616e64ea6135">
+
+        <div class="form-control">
+            <div class="form-inputs">
+                <input type="text" name="name" class="input-field" placeholder="Name" required>
+                <input type="email" name="email" class="input-field" placeholder="Email" required>
+            </div>
+            
+            <div class="text-area">
+                <textarea name="message" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="form-button">
+                <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+            </div>
+        </div>
+
+        </form>
+</div>
                 </div>
              </div>
           </div>
@@ -296,6 +306,7 @@
     <script src="index.js"></script>
 </body>
 </html>
+
 
 
 
